@@ -7,6 +7,8 @@ The proxy handles the RPC file operations from the client interposition library.
 In addition to the client interposition library, a Java class is provided to handle the low-level RPC serialization with the client library. It calls the code to actually perform the operations. Implemented here is a class that implements an interface providing methods for open, read, write, ... operations that behave similar to their C counterparts. The proxy code is responsible for fetching and caching needed files from the server.
 
 ## Usage
+The working directory contains the main Proxy and Server files.
+
 The tools directory contains binary tools that perform I/O operations.
 These will work on Linux x86 64-bit platforms (does NOT work on macOS or Windows).
 
